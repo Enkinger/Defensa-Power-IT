@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo_login"
+        tools:context=".UI.LevantarTicket">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/UsuarioTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/usuario_login_hint"
+            android:textColorHint="@color/secundario"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="false"
+            app:counterMaxLength="20"
+            app:errorEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/AsuntoTicket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@drawable/ic_usuario"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNombreUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:enabled="false"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AsuntoTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/asunto_ticket"
+            android:textColorHint="@color/secundario"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:errorEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/DescripcionTicket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/UsuarioTicket"
+            app:startIconDrawable="@drawable/ic_add_task">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAsunto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/DescripcionTicket"
+            android:layout_width="match_parent"
+            android:layout_height="294dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:hint="@string/descripcion_ticket"
+            android:textColorHint="@color/secundario"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:counterMaxLength="200"
+            app:errorEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewFoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AsuntoTicket"
+            app:startIconDrawable="@drawable/ic_add_task">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:inputType="text"
+                android:selectAllOnFocus="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageView
+            android:id="@+id/imageViewFoto"
+            android:layout_width="100dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnCamara"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewFoto2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/DescripcionTicket" />
+
+        <ImageView
+            android:id="@+id/imageViewFoto2"
+            android:layout_width="100dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnCamara"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewFoto"
+            app:layout_constraintTop_toBottomOf="@id/DescripcionTicket" />
+
+        <Button
+            android:id="@+id/btnCamara"
+            android:layout_width="150dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="5dp"
+            android:text="Capturar Foto"
+            android:textSize="10sp"
+            app:backgroundTint="@color/secundario"
+            app:cornerRadius="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toStartOf="@+id/btnCamara2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewFoto" />
+
+        <Button
+            android:id="@+id/btnCamara2"
+            android:layout_width="150dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="4dp"
+            android:text="Enviar ubicación"
+            android:textSize="10sp"
+            app:backgroundTint="@color/secundario"
+            app:cornerRadius="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnCamara"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewFoto" />
+
+        <Button
+            android:id="@+id/btnSubirTicket"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:text="@string/crear_ticket"
+            app:cornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCamara" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

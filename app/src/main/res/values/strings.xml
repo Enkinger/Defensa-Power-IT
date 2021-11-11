@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">PowerIt</string>
+    <string name="usuario_login_hint">Usuario</string>
+    <string name="asunto_ticket">Asunto</string>
+    <string name="descripcion_ticket">Descripción</string>
+    <string name="foto_ticket">Foto</string>
+    <string name="contraseña_login_hint">Contraseña</string>
+    <string name="tv_olvido_contraseña"><u><i>¿Olvidó su contraseña?</i></u></string>
+    <string name="btn_iniciar_sesion">Iniciar sesión</string>
+    <string name="tv_iniciar_sesion"><u>Iniciar sesión</u></string>
+    <string name="tv_no_registrado">¿No está registrado?</string>
+    <string name="tv_registrarse"><u>Registrarse</u></string>
+    <string name="btn_registrarse">Registrarse</string>
+    <string name="hint_nombre_completo">Nombre completo</string>
+    <string name="hint_nombre_de_usuario">Nombre de usuario</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_telefono">Teléfono</string>
+    <string name="hint_contraseña">Contraseña</string>
+    <string name="hint_confirmar_contraseña">Confirmar contraseña</string>
+    <string name="tv_ya_esta_registrado">¿Ya está registrado?</string>
+    <string name="hint_especialidad">Especialidad</string>
+    <string name="historial">Historial</string>
+    <string name="ticket_socio">Resolver ticket</string>
+    <string name="mis_tickets">Mis tickets activos</string>
+    <string name="crear_ticket">Crear ticket</string>
+    <string name="ver_tickets">Ver tickets</string>
+    <string name="tv_fecha_ticket">Fecha</string>
+    <string name="tv_cliente_ticket">Cliente</string>
+    <string name="tv_titulo_cliente_ticket">Cliente:</string>
+    <string name="tv_titulo_fecha_ticket">Fecha:</string>
+    <string name="tv_titulo_descripcion_ticket">Descripción:</string>
+    <string name="tv_titulo_imagen_ticket">Imagen:</string>
+    <string name="tv_socio_ticket">Socio</string>
+    <string name="tv_sociotitulo_ticket">Socio:</string>
+    <string name="tv_clientetitulo_ticket">Cliente:</string>
+    <string name="btn_tomarTicket">Resolver ticket</string>
+    <string name="btn_cerrarTicket">Finalizar ticket</string>
+
+
+</resources>
